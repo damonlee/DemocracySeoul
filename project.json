@@ -3,9 +3,9 @@
   "description": "민주주의 서울 내용 수집/분석 ",
   "main": "TopKeywords.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.5.3]",
-    "UiPath.Mail.Activities": "[1.4.0]",
-    "UiPath.PDF.Activities": "2.0.1",
+    "UiPath.Excel.Activities": "[2.6.0]",
+    "UiPath.Mail.Activities": "[1.5.0]",
+    "UiPath.PDF.Activities": "2.1.0",
     "UiPath.Python.Activities": "1.1.6863.33404",
     "UiPath.System.Activities": "[19.4.0]",
     "UiPath.UIAutomation.Activities": "[19.4.1]"
@@ -22,6 +22,7 @@
     ]
   },
   "projectType": "Workflow",
+  "expressionLanguage": "VisualBasic",
   "libraryOptions": {
     "includeOriginalXaml": false,
     "privateWorkflows": []
