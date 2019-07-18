@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import sys
 import os
-
 input_path= "data"
 output_path="datalog"
 image_path="wordcloud"
@@ -26,12 +25,12 @@ def get_tags(text, ntags=50):
     return return_list
 
 
-def main(iter_count):
-    text_file_name = input_path + str(iter_count) + ".txt"
+def main(Project_path,iter_count):
+    text_file_name =Project_path + input_path + str(iter_count) + ".txt"
     # 분석할 파일
     noun_count = 50
     # 최대 많은 빈도수 부터 50개 명사 추출
-    output_file_name = output_path + str(iter_count) + ".txt"
+    output_file_name = Project_path + output_path + str(iter_count) + ".txt"
     # count.txt 에 저장
     open_text_file = open(text_file_name, 'r',encoding="utf-8")
     # 분석할 파일을 open
@@ -51,7 +50,7 @@ def main(iter_count):
     # 결과 저장
     open_output_file.close()
 
-    analyze_wordcloud(dict_for_cloud,image_path + str(iter_count) + ".jpeg")
+    analyze_wordcloud(dict_for_cloud,Project_path + image_path + str(iter_count) + ".jpeg")
 
 
 def analyze_wordcloud(count_list,image_path):
@@ -71,6 +70,6 @@ def analyze_wordcloud(count_list,image_path):
 
 
 if __name__ == "__main__" :
-    sys.path.append(os.path.dirname(os.path.realpath(__file__)))
-    main(sys.argv[1])
+    main(sys.argv[1],sys.argv[2])
+
 
