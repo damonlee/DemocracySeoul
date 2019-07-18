@@ -1,18 +1,16 @@
 {
-  "name": "민주주의서울",
-  "description": "민주주의 서울 내용 수집/분석 ",
-  "main": "TopKeywords.xaml",
+  "name": "Citizen_no_closing",
+  "description": "Blank Process",
+  "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.6.0]",
+    "UiPath.Excel.Activities": "[2.6.2]",
     "UiPath.Mail.Activities": "[1.5.0]",
-    "UiPath.PDF.Activities": "2.1.0",
-    "UiPath.Python.Activities": "1.1.6863.33404",
-    "UiPath.System.Activities": "[19.4.0]",
-    "UiPath.UIAutomation.Activities": "[19.4.1]"
+    "UiPath.System.Activities": "[19.6.0]",
+    "UiPath.UIAutomation.Activities": "[19.6.0]"
   },
   "schemaVersion": "3.2",
-  "studioVersion": "19.4.3.0",
-  "projectVersion": "1.0.0",
+  "studioVersion": "19.6.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -26,6 +24,10 @@
   "libraryOptions": {
     "includeOriginalXaml": false,
     "privateWorkflows": []
+  },
+  "arguments": {
+    "input": [],
+    "output": []
   },
   "webServices": []
 }
